@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yuri Mignacca — Atleta de Endurance | MTB, Trail e Duathlon</title>
+<meta name="description" content="Yuri Mignacca corre, pedala e cozinha. Atleta de endurance em MTB, trail running e cross duathlon — 4º geral no World Trail Races de Nova Lima. Em 2026, o corpo pediu pausa e ele decidiu contar a história em vez de escondê-la.">
+<meta name="theme-color" content="#26301F">
+<link rel="canonical" href="https://yurimignacca.com/">
+
+<!-- ═══ OPEN GRAPH ═══ -->
+<meta property="og:type" content="profile">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Yuri Mignacca">
+<meta property="og:title" content="Yuri Mignacca — Atleta de Endurance | MTB, Trail e Duathlon">
+<meta property="og:description" content="Transformando uma pausa forçada em evolução. Atleta de endurance, cozinheiro e modelo — a história completa em um só lugar.">
+<meta property="og:url" content="https://yurimignacca.com/">
+<!-- SUBSTITUIR: og:image — foto de ação horizontal com o rosto visível, 1200x630px -->
+<meta property="og:image" content="/og-yuri-mignacca.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+
+<style>
+/* ═══════════════════════════════════════════════════════════
+   TOKENS
+   ═══════════════════════════════════════════════════════════ */
+:root{
+  --musgo:        #26301F;
+  --terracota:    #8B5E3C;
+  --terracota-ink:#7A4F31;  /* variação p/ TEXTO sobre fundos claros (AA 5.18:1 sobre areia) */
+  --terracota-lum:#C68B5E;  /* variação p/ TEXTO sobre fundos escuros (AA 4.77:1 sobre musgo) */
+  --vermelho:     #A23B3B;
+  --vermelho-esc: #8C3030;
+  --pedra:        #F2EDE4;
+  --areia:        #E4DCCB;
+  --carvao:       #1C1B18;
+
+  --ease:  cubic-bezier(0.22, 1, 0.36, 1);
+  --dur:   .7s;
+
+  --h-hero:  clamp(3rem, 8vw, 6.5rem);
+  --h-sec:   clamp(2rem, 4.5vw, 3.5rem);
+  --h-marco: clamp(1.6rem, 3vw, 2.4rem);
+  --body:    clamp(1.05rem, 1.3vw, 1.2rem);
+
+  --container: min(1200px, 92vw);
+  --sec-pad:   clamp(5rem, 10vw, 9rem);
+  --gutter:    clamp(2rem, 5vw, 5rem);
+
+  --noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ═══════════════════════════════════════════════════════════
+   RESET / BASE
+   ═══════════════════════════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--pedra);
+  color:var(--carvao);
+  font-family:"Lora",Georgia,serif;
+  font-size:var(--body);
+  line-height:1.75;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3,h4{margin:0;font-family:"Oswald",Impact,sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.02em;line-height:1.05}
+p{margin:0 0 1.25em}
+p:last-child{margin-bottom:0}
+strong{font-weight:500;color:var(--musgo);box-shadow:inset 0 -.42em 0 rgba(139,94,60,.16)}
+:focus-visible{outline:2px solid var(--vermelho);outline-offset:2px;border-radius:2px}
+.container{width:var(--container);margin-inline:auto}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+.eyebrow{
+  font-family:"Oswald",sans-serif;font-weight:500;
+  font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--terracota-ink);margin:0 0 1.4rem;line-height:1.4;
+}
+.eyebrow--dark{color:var(--terracota-lum)}
+h2{font-size:var(--h-sec)}
+
+/* ═══════════════════════════════════════════════════════════
+   PLACEHOLDERS DE IMAGEM (CSS — nenhuma URL externa)
+   A foto real entra como <img> dentro do .ph e assume o slot.
+   ═══════════════════════════════════════════════════════════ */
+.ph{
+  position:relative;overflow:hidden;
+  background-color:var(--areia);
+  isolation:isolate;
+}
+.ph::after{
+  content:"";position:absolute;inset:0;z-index:1;
+  background-image:var(--noise);opacity:.06;pointer-events:none;
+}
+.ph > img{width:100%;height:100%;object-fit:cover;position:relative;z-index:2}
+.ph__label{
+  position:absolute;left:1rem;bottom:.9rem;z-index:3;
+  font-family:"Oswald",sans-serif;font-weight:500;
+  font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;
+  color:rgba(242,237,228,.55);
+  max-width:calc(100% - 2rem);
+}
+.ph--dark .ph__label{color:rgba(242,237,228,.5)}
+.ph--light .ph__label{color:rgba(28,27,24,.42)}
+.ph--hero{background-image:linear-gradient(165deg,#26301F 0%,#4a4a33 55%,#8B5E3C 130%)}
+.ph--retrato{background-color:var(--areia);background-image:linear-gradient(200deg,#EDE6D9 0%,#E4DCCB 45%,#c9bda6 100%)}
+.ph--acao-a{background-image:linear-gradient(150deg,#26301F 0%,#3d4a2e 60%,#8B5E3C 115%)}
+.ph--acao-b{background-image:linear-gradient(30deg,#26301F 0%,#5a5138 55%,#8B5E3C 110%)}
+.ph--cozinha-a{background-image:linear-gradient(175deg,#8B5E3C 0%,#6d4a30 55%,#26301F 125%)}
+.ph--cozinha-b{background-image:linear-gradient(105deg,#a06f47 0%,#8B5E3C 60%,#4a3925 100%)}
+.ph--modelo{background-image:linear-gradient(160deg,#2b2925 0%,#1C1B18 55%,#3a3128 110%)}
+.ph--g1{background-image:linear-gradient(160deg,#26301F,#5a5138)}
+.ph--g2{background-image:linear-gradient(20deg,#8B5E3C,#26301F)}
+.ph--g3{background-image:linear-gradient(200deg,#E4DCCB,#8B5E3C)}
+.ph--g4{background-image:linear-gradient(140deg,#1C1B18,#4a4a33)}
+.ph--g5{background-image:linear-gradient(60deg,#4a3925,#26301F)}
+.ph--g6{background-image:linear-gradient(190deg,#c9bda6,#26301F)}
+
+/* ═══════════════════════════════════════════════════════════
+   CORAÇÃO ANATÔMICO (elemento de assinatura)
+   ═══════════════════════════════════════════════════════════ */
+.heart{display:block;color:var(--vermelho);flex:none;stroke-width:1.5}
+.heart--nav{width:20px;height:auto;stroke-width:3}
+.heart--hero{width:48px;height:auto}
+.heart--divisor{width:34px;height:auto;stroke-width:2}
+.heart--footer{width:20px;height:auto;stroke-width:3}
+.heart--light{color:#E8A7A7}
+
+@keyframes pulso{0%,100%{transform:scale(1)}42%{transform:scale(1.04)}58%{transform:scale(1.005)}}
+.heart--pulse{animation:pulso 2.8s ease-in-out infinite;transform-origin:center}
+
+/* ═══════════════════════════════════════════════════════════
+   BOTÕES
+   ═══════════════════════════════════════════════════════════ */
+.btn{
+  display:inline-flex;align-items:center;gap:.6rem;
+  font-family:"Oswald",sans-serif;font-weight:600;
+  font-size:.85rem;letter-spacing:.16em;text-transform:uppercase;
+  padding:1.05rem 2rem;border-radius:2px;text-decoration:none;
+  border:1px solid transparent;cursor:pointer;
+  transition:background-color .35s var(--ease),color .35s var(--ease),
+             box-shadow .35s var(--ease),transform .18s var(--ease),
+             border-color .35s var(--ease);
+}
+.btn--primary{background:var(--vermelho);color:#fff;box-shadow:0 2px 10px rgba(162,59,59,.22)}
+.btn--primary:hover{background:var(--vermelho-esc);box-shadow:0 10px 30px rgba(162,59,59,.34)}
+.btn--ghost{border-color:rgba(242,237,228,.5);color:var(--pedra);background:transparent}
+.btn--ghost:hover{border-color:var(--pedra);background:rgba(242,237,228,.1)}
+.btn--ghost-dark{border-color:rgba(38,48,31,.35);color:var(--musgo);background:transparent}
+.btn--ghost-dark:hover{border-color:var(--musgo);background:rgba(38,48,31,.06)}
+.btn:active{transform:scale(.97)}
+.btn--sm{padding:.62rem 1.15rem;font-size:.72rem;letter-spacing:.14em}
+
+/* ═══════════════════════════════════════════════════════════
+   SEÇÃO 1: NAV
+   ═══════════════════════════════════════════════════════════ */
+.nav{
+  position:fixed;inset:0 0 auto 0;z-index:100;
+  background:rgba(28,27,24,.6);
+  -webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
+  border-bottom:1px solid transparent;
+  transition:background-color .45s var(--ease),border-color .45s var(--ease);
+}
+.nav__inner{
+  width:var(--container);margin-inline:auto;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:1.5rem;padding-block:.95rem;
+}
+.nav__brand{
+  display:flex;align-items:center;gap:.6rem;text-decoration:none;
+  font-family:"Oswald",sans-serif;font-weight:600;
+  font-size:.95rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--pedra);transition:color .45s var(--ease);
+}
+.nav__links{display:flex;align-items:center;gap:.35rem;list-style:none;margin:0;padding:0}
+.nav__link{
+  font-family:"Oswald",sans-serif;font-weight:500;
+  font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;
+  color:rgba(242,237,228,.85);text-decoration:none;
+  padding:.55rem .85rem;border-radius:2px;
+  transition:color .3s var(--ease),background-color .3s var(--ease);
+}
+.nav__link:hover{color:#fff;background:rgba(242,237,228,.1)}
+
+.nav.scrolled{
+  background:rgba(242,237,228,.75);
+  border-bottom-color:rgba(38,48,31,.14);
+}
+.nav.scrolled .nav__brand{color:var(--musgo)}
+.nav.scrolled .nav__link{color:var(--musgo)}
+.nav.scrolled .nav__link:hover{background:rgba(38,48,31,.07);color:var(--carvao)}
+.nav.scrolled .nav__toggle span{background:var(--musgo)}
+
+.nav__toggle{
+  display:none;width:44px;height:44px;padding:0;
+  background:transparent;border:0;cursor:pointer;
+  flex-direction:column;justify-content:center;align-items:center;gap:6px;
+}
+.nav__toggle span{
+  display:block;width:24px;height:2px;background:var(--pedra);
+  transition:transform .4s var(--ease),opacity .25s var(--ease),background-color .45s var(--ease);
+}
+.nav__toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.nav__toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.nav__toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+
+/* drawer mobile */
+.drawer{
+  position:fixed;inset:0 0 0 auto;z-index:99;
+  width:min(320px,84vw);
+  background:var(--musgo);
+  padding:6rem 2rem 2rem;
+  transform:translateX(100%);
+  transition:transform .5s var(--ease);
+  display:flex;flex-direction:column;gap:.25rem;
+}
+.drawer.open{transform:translateX(0)}
+.drawer a{
+  font-family:"Oswald",sans-serif;font-weight:500;
+  font-size:1.05rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--areia);text-decoration:none;
+  padding:.9rem 0;border-bottom:1px solid rgba(228,220,203,.14);
+}
+.drawer a:last-of-type{border-bottom:0}
+.drawer__cta{margin-top:1.5rem}
+.scrim{
+  position:fixed;inset:0;z-index:98;background:rgba(28,27,24,.5);
+  opacity:0;visibility:hidden;transition:opacity .4s var(--ease),visibility .4s;
+}
+.scrim.open{opacity:1;visibility:visible}
+
+/* ═══════════════════════════════════════════════════════════
+   SEÇÃO 2: HERO
+   ═══════════════════════════════════════════════════════════ */
+.hero{
+  position:relative;min-height:100svh;
+  display:flex;align-items:flex-end;
+  overflow:hidden;background:var(--carvao);
+}
+.hero__media{position:absolute;inset:-8% 0 -8% 0;will-change:transform}
+.hero__media::before{
+  content:"";position:absolute;inset:0;z-index:2;
+  background:linear-gradient(to top,rgba(28,27,24,.92) 0%,rgba(28,27,24,.55) 34%,rgba(28,27,24,.12) 62%,rgba(28,27,24,.45) 100%);
+}
+.hero__inner{
+  position:relative;z-index:3;
+  width:var(--container);margin-inline:auto;
+  padding-block:clamp(3rem,9vh,6rem);
+}
+.hero__eyebrow{color:var(--terracota-lum);margin-bottom:1.6rem}
+.hero h1{
+  font-size:var(--h-hero);line-height:.95;font-weight:700;
+  color:var(--pedra);max-width:16ch;margin-bottom:1.6rem;
+}
+.hero h1 .em{
+  display:block;font-family:"Lora",serif;font-style:italic;font-weight:400;
+  text-transform:none;letter-spacing:-0.01em;color:var(--areia);
+  font-size:.92em;line-height:1.02;margin-top:.12em;
+}
+.hero__sub{
+  max-width:46ch;color:rgba(242,237,228,.86);
+  font-size:clamp(1.05rem,1.5vw,1.28rem);line-height:1.7;margin-bottom:2.4rem;
+}
+.hero__ctas{display:flex;flex-wrap:wrap;gap:.9rem}
+.hero__heart{
+  position:absolute;z-index:4;right:max(4vw,1.5rem);
+  bottom:clamp(3rem,9vh,6rem);
+}
+.hero__scroll{
+  position:absolute;z-index:4;left:max(4vw,1.5rem);top:calc(100svh - 3.2rem);
+  font-family:"Oswald",sans-serif;font-size:.62rem;letter-spacing:.28em;
+  text-transform:uppercase;color:rgba(242,237,228,.45);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   SEÇÃO 3: DECLARAÇÃO
+   ═══════════════════════════════════════════════════════════ */
+.declaracao{
+  background:var(--musgo);color:var(--areia);
+  padding-block:clamp(5rem,11vw,8.5rem);text-align:center;
+  position:relative;
+}
+.declaracao::after{
+  content:"";position:absolute;inset:0;background-image:var(--noise);
+  opacity:.05;pointer-events:none;
+}
+.declaracao blockquote{
+  margin:0 auto;max-width:28ch;
+  font-family:"Lora",serif;font-style:italic;font-weight:400;
+  font-size:clamp(1.5rem,3vw,2.2rem);line-height:1.45;
+  color:var(--pedra);position:relative;z-index:1;
+}
+.declaracao cite{
+  display:block;margin-top:2.2rem;font-style:normal;
+  font-family:"Oswald",sans-serif;font-size:.72rem;letter-spacing:.28em;
+  text-transform:uppercase;color:var(--terracota-lum);position:relative;z-index:1;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   BLOCOS NARRATIVOS — GRID ASSIMÉTRICO 7/5 e 5/7
+   ═══════════════════════════════════════════════════════════ */
+.section{padding-block:var(--sec-pad)}
+.split{display:grid;gap:var(--gutter);align-items:center}
+.split--75{grid-template-columns:7fr 5fr}
+.split--57{grid-template-columns:5fr 7fr}
+.split__text{max-width:56ch}
+
+/* ═══ SEÇÃO 4: ATO I ═══ */
+.ato1 .ph--retrato{aspect-ratio:9/11;border-radius:2px}
+.ato-tag{
+  display:inline-block;margin-bottom:1.1rem;
+  font-family:"Oswald",sans-serif;font-weight:500;font-size:.68rem;
+  letter-spacing:.24em;text-transform:uppercase;
+  color:var(--terracota-ink);border:1px solid rgba(139,94,60,.4);
+  padding:.32rem .7rem;border-radius:2px;
+}
+.ato1 h2{margin-bottom:1.8rem;max-width:18ch}
+.nota-dado{
+  margin-top:2.2rem;padding-left:1.4rem;
+  border-left:2px solid var(--vermelho);
+  font-size:.98rem;line-height:1.65;color:rgba(28,27,24,.75);
+}
+
+/* ═══ SEÇÃO 5: ATO II ═══ */
+.ato2{background:var(--areia)}
+.ato2 h2{margin-bottom:3.2rem;max-width:20ch}
+.pausa-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.5rem,3vw,2.6rem)}
+.pausa-card{
+  border-top:2px solid var(--terracota);
+  padding-top:1.6rem;
+}
+.pausa-card h3{
+  font-size:var(--h-marco);font-weight:700;line-height:1.02;
+  color:var(--musgo);margin-bottom:.9rem;text-transform:none;
+}
+.pausa-card h3 .num{display:block;font-size:1.35em;letter-spacing:0}
+.pausa-card p{font-size:.98rem;line-height:1.65;color:rgba(28,27,24,.78)}
+
+/* ═══ SEÇÃO 6: ATO III ═══ */
+.ato3{
+  background:linear-gradient(100deg,var(--vermelho) 0%,var(--terracota) 100%);
+  color:#fff;padding-block:clamp(2.6rem,6vw,4.2rem);
+}
+.ato3__inner{
+  display:flex;align-items:center;justify-content:center;gap:1.6rem;
+  flex-wrap:wrap;text-align:center;
+}
+.ato3 p{
+  margin:0;font-family:"Oswald",sans-serif;font-weight:600;
+  font-size:clamp(1.25rem,3vw,2rem);letter-spacing:.06em;text-transform:uppercase;
+}
+
+/* ═══ SEÇÃO 7: ATLETA ═══ */
+.atleta__head{max-width:52ch;margin-bottom:clamp(2.5rem,5vw,4rem)}
+.atleta__head h2{margin-bottom:1.4rem}
+.acao-grid{
+  display:grid;grid-template-columns:7fr 5fr;gap:clamp(1rem,2.2vw,1.8rem);
+  margin-bottom:clamp(3rem,6vw,5rem);
+}
+.acao-grid .ph{aspect-ratio:10/7;border-radius:2px}
+.acao-grid .ph:last-child{aspect-ratio:5/4}
+.marcos{list-style:none;margin:0;padding:0;border-top:1px solid rgba(38,48,31,.18)}
+.marco{
+  display:grid;grid-template-columns:5fr 7fr;gap:clamp(1rem,3vw,3rem);
+  padding-block:clamp(1.7rem,3.2vw,2.4rem);
+  border-bottom:1px solid rgba(38,48,31,.18);
+  align-items:baseline;
+}
+.marco__eyebrow{
+  font-family:"Oswald",sans-serif;font-weight:500;font-size:.72rem;
+  letter-spacing:.24em;text-transform:uppercase;color:var(--terracota-ink);
+  line-height:1.5;
+}
+.marco__feito{
+  font-family:"Oswald",sans-serif;font-weight:700;
+  font-size:var(--h-marco);line-height:1.05;letter-spacing:.02em;
+  text-transform:uppercase;color:var(--musgo);margin:0 0 .55rem;
+  clip-path:inset(0 0 100% 0);
+  transition:clip-path .85s var(--ease);
+  transition-delay:var(--reveal-delay,0ms);
+}
+.is-visible .marco__feito,.marco.is-visible .marco__feito{clip-path:inset(0 0 0 0)}
+.marco__ctx{font-size:1rem;line-height:1.6;color:rgba(28,27,24,.78);margin:0}
+
+/* ═══ SEÇÃO 8: COZINHA ═══ */
+.cozinha{background:var(--areia)}
+.cozinha__media{display:grid;gap:clamp(.8rem,1.6vw,1.2rem)}
+.cozinha__media .ph:first-child{aspect-ratio:4/5;border-radius:2px}
+.cozinha__media .ph:last-child{aspect-ratio:4/3;border-radius:2px}
+.cozinha h2{margin-bottom:1.6rem;max-width:14ch}
+
+/* ═══ SEÇÃO 9: MODELO ═══ */
+.modelo{background:var(--carvao);color:var(--pedra)}
+.modelo h2{color:var(--pedra);margin-bottom:1.6rem;max-width:16ch}
+.modelo p{color:rgba(242,237,228,.8)}
+.modelo strong{color:var(--pedra);box-shadow:inset 0 -.42em 0 rgba(198,139,94,.3)}
+.modelo .ph--modelo{aspect-ratio:4/5;border-radius:2px}
+
+/* ═══ SEÇÃO 9B: GALERIA ═══ */
+.galeria{background:var(--carvao);padding-bottom:var(--sec-pad)}
+.galeria .eyebrow{margin-bottom:2rem}
+.galeria__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.6rem,1.4vw,1.1rem)}
+.galeria__grid .ph{border-radius:2px}
+.galeria__grid .ph:nth-child(1){aspect-ratio:2/3}
+.galeria__grid .ph:nth-child(2){aspect-ratio:1/1}
+.galeria__grid .ph:nth-child(3){aspect-ratio:3/4}
+.galeria__grid .ph:nth-child(4){aspect-ratio:3/4}
+.galeria__grid .ph:nth-child(5){aspect-ratio:2/3}
+.galeria__grid .ph:nth-child(6){aspect-ratio:1/1}
+
+/* ═══ SEÇÃO 10: PARCERIAS + CONTATO ═══ */
+.parcerias__intro{max-width:46ch;margin-bottom:clamp(2.2rem,4vw,3.2rem)}
+.logos{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(.8rem,1.8vw,1.4rem)}
+.logo-slot{
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  min-height:clamp(110px,13vw,150px);padding:1.2rem;
+  border:1px solid rgba(38,48,31,.16);border-radius:2px;
+  background:rgba(228,220,203,.4);
+}
+.logo-slot__mark{
+  font-family:"Oswald",sans-serif;font-weight:600;
+  font-size:clamp(.8rem,1.3vw,1rem);letter-spacing:.14em;text-transform:uppercase;
+  color:var(--musgo);line-height:1.35;
+  filter:grayscale(1);opacity:.85;
+  transition:opacity .35s var(--ease);
+}
+.logo-slot:hover .logo-slot__mark{opacity:1}
+.logo-slot--vago{
+  border:1px dashed rgba(139,94,60,.5);background:transparent;
+}
+.logo-slot--vago span{
+  font-family:"Lora",serif;font-style:italic;font-size:.95rem;
+  color:rgba(122,79,49,.72);
+}
+.contato{
+  margin-top:clamp(4rem,8vw,6.5rem);
+  border-top:1px solid rgba(38,48,31,.18);
+  padding-top:clamp(3rem,6vw,4.5rem);
+  display:grid;grid-template-columns:5fr 7fr;gap:var(--gutter);align-items:start;
+}
+.contato h2{max-width:12ch}
+.contato p{max-width:44ch}
+.contato__actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem}
+
+/* ═══ SEÇÃO 11: FOOTER ═══ */
+.footer{background:var(--musgo);color:var(--areia);padding-block:clamp(3rem,6vw,4.5rem)}
+.footer__inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:1.5rem;flex-wrap:wrap;
+}
+.footer__brand{
+  display:flex;align-items:center;gap:.6rem;
+  font-family:"Oswald",sans-serif;font-weight:600;
+  font-size:.95rem;letter-spacing:.2em;text-transform:uppercase;color:var(--pedra);
+}
+.footer__links{display:flex;gap:1.6rem;list-style:none;margin:0;padding:0}
+.footer__links a{
+  font-family:"Oswald",sans-serif;font-weight:500;font-size:.76rem;
+  letter-spacing:.18em;text-transform:uppercase;
+  color:rgba(228,220,203,.85);text-decoration:none;
+  transition:color .3s var(--ease);
+}
+.footer__links a:hover{color:#fff}
+.footer__note{
+  width:100%;margin-top:2.6rem;padding-top:1.6rem;
+  border-top:1px solid rgba(228,220,203,.16);
+  display:flex;align-items:center;gap:.7rem;
+  font-family:"Lora",serif;font-style:italic;font-size:.92rem;
+  color:rgba(228,220,203,.62);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   SCROLL REVEAL
+   ═══════════════════════════════════════════════════════════ */
+[data-reveal]{
+  opacity:0;transform:translateY(28px);
+  transition:opacity var(--dur) var(--ease),transform var(--dur) var(--ease);
+  transition-delay:var(--reveal-delay,0ms);
+}
+[data-reveal].is-visible{opacity:1;transform:none}
+
+/* ═══════════════════════════════════════════════════════════
+   MOBILE ≤768px
+   ═══════════════════════════════════════════════════════════ */
+@media (max-width:768px){
+  .nav__links{display:none}
+  .nav__toggle{display:flex}
+  .split--75,.split--57,.acao-grid,.marco,.contato{grid-template-columns:1fr}
+  /* a foto vem SEMPRE depois do texto do ato */
+  .split__text{order:1;max-width:none}
+  .split__media{order:2}
+  .pausa-grid{grid-template-columns:1fr;gap:2.2rem}
+  .logos{grid-template-columns:repeat(2,1fr)}
+  .galeria__grid{grid-template-columns:repeat(2,1fr)}
+  .marco{gap:.7rem}
+  .marco__eyebrow{margin-bottom:.3rem}
+  .hero h1{max-width:none;font-size:clamp(2.6rem,12vw,4rem)}
+  .hero__heart{right:1.5rem;bottom:auto;top:calc(100svh - 12rem)}
+  .hero__scroll{display:none}
+  .footer__inner{flex-direction:column;align-items:flex-start;gap:1.6rem}
+}
+@media (max-width:420px){
+  .galeria__grid{grid-template-columns:1fr}
+}
+
+/* ═══════════════════════════════════════════════════════════
+   PREFERÊNCIAS DO SISTEMA
+   ═══════════════════════════════════════════════════════════ */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.001ms !important;animation-iteration-count:1 !important;
+    scroll-behavior:auto !important;
+  }
+  [data-reveal]{transform:none;transition:opacity .2s linear;transition-delay:0ms !important}
+  .marco__feito{clip-path:none;transition:none}
+  .heart--pulse{animation:none}
+  .hero__media{transform:none !important;inset:0}
+  .btn{transition:background-color .2s linear,color .2s linear}
+  .btn:active{transform:none}
+  .drawer{transition:transform .2s linear}
+}
+@media (prefers-reduced-transparency:reduce){
+  .nav{background:var(--carvao);-webkit-backdrop-filter:none;backdrop-filter:none}
+  .nav.scrolled{background:var(--pedra)}
+  .logo-slot{background:var(--areia)}
+}
+@media (prefers-contrast:more){
+  :root{--areia:#D8CDB6;--terracota-ink:#633F27}
+  .pausa-card,.logo-slot{border:1px solid var(--musgo)}
+  .pausa-card{border-top-width:3px;padding:1.4rem}
+  .marcos,.marco{border-color:rgba(38,48,31,.5)}
+  .marco__ctx,.pausa-card p,.nota-dado{color:var(--carvao)}
+  strong{box-shadow:none;text-decoration:underline;text-underline-offset:.25em}
+  .btn--ghost{border-color:var(--pedra)}
+  .btn--ghost-dark{border-color:var(--musgo)}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     CORAÇÃO ANATÔMICO — line art, definido uma vez
+     ═══════════════════════════════════════════════════════ -->
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <symbol id="heart" viewBox="0 0 64 72">
+    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+      <!-- massa ventricular -->
+      <path d="M17 31c-7.5 5.5-10 17.5-5.5 27.5 3.6 8 11.5 13.5 18.5 11.6 9.5-2.6 17-12.5 19.5-25 1.4-7 .6-12.6-3-15.6"/>
+      <!-- sulco atrial -->
+      <path d="M17 31c4-4 10.5-3 15 .5 4-3.6 10.5-4.4 14.5-2"/>
+      <!-- arco aórtico -->
+      <path d="M32 31.5c-.5-10.5 1.5-19 8-21.5 6-2.3 10.2 2.4 9.4 8.8-.6 4.8-1.8 8.4-2.2 12.7"/>
+      <!-- tronco pulmonar -->
+      <path d="M27 29.5c-2-8-6-13.5-11.2-13.5-5 0-7.3 4.8-5.4 9.2"/>
+      <!-- artéria coronária -->
+      <path d="M18.5 36c5.5 3.6 14 4.4 22 1.6"/>
+      <!-- septo -->
+      <path d="M29.5 34.5c2.2 11 2 22.8-2.6 33"/>
+    </g>
+  </symbol>
+</svg>
+
+<!-- ═══════════════════════════════════════════════════════
+     SEÇÃO 1: NAV
+     ═══════════════════════════════════════════════════════ -->
+<header>
+  <nav class="nav" id="nav" aria-label="Navegação principal">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#topo">
+        <svg class="heart heart--nav" aria-hidden="true" focusable="false"><use href="#heart"/></svg>
+        Yuri Mignacca
+      </a>
+      <ul class="nav__links">
+        <li><a class="nav__link" href="#historia">História</a></li>
+        <li><a class="nav__link" href="#atleta">Atleta</a></li>
+        <li><a class="nav__link" href="#cozinha">Cozinha</a></li>
+        <li><a class="nav__link" href="#modelo">Modelo</a></li>
+        <li><a class="btn btn--primary btn--sm" href="#contato">Contato</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" type="button"
+              aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="drawer" id="drawer" aria-label="Menu de navegação" inert>
+    <a href="#historia">História</a>
+    <a href="#atleta">Atleta</a>
+    <a href="#cozinha">Cozinha</a>
+    <a href="#modelo">Modelo</a>
+    <a class="btn btn--primary drawer__cta" href="#contato">Contato</a>
+  </aside>
+</header>
+
+<main id="topo">
+
+<!-- ═══════════════════════════════════════════════════════
+     SEÇÃO 2: HERO
+     ═══════════════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero__media ph ph--hero ph--dark" id="heroMedia" aria-hidden="true">
+    <!-- SUBSTITUIR: foto de ação em trilha/MTB, ângulo inclinado dinâmico, poeira/movimento visível — 1600x1000px.
+         alt sugerido: "Yuri Mignacca em descida de MTB numa trilha de cascalho, poeira suspensa ao fundo" -->
+    <span class="ph__label">Foto de ação — trilha / MTB</span>
+  </div>
+
+  <div class="hero__inner">
+    <p class="eyebrow hero__eyebrow">Atleta de Endurance — MTB · Trail · Duathlon</p>
+    <h1>
+      Transformando uma pausa forçada
+      <span class="em">em evolução.</span>
+    </h1>
+    <p class="hero__sub">
+      Yuri Mignacca corre, pedala e cozinha. Em 2026, o corpo pediu pausa —
+      e ele decidiu contar essa história em vez de escondê-la.
+    </p>
+    <div class="hero__ctas">
+      <a class="btn btn--primary" href="#historia">Ler a história</a>
+      <a class="btn btn--ghost" href="#contato">Parcerias</a>
+    </div>
+  </div>
+
+  <svg class="heart heart--hero heart--pulse hero__heart" aria-hidden="true" focusable="false"><use href="#heart"/></svg>
+  <p class="hero__scroll">Role</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SEÇÃO 3: DECLARAÇÃO
+     ═══════════════════════════════════════════════════════ -->
+<section class="declaracao">
+  <div class="container">
+    <!-- VALIDAR com o Yuri: frase-síntese construída a partir do arco real dos posts.
+         Ajustar para as palavras exatas dele, se ele preferir. -->
+    <blockquote data-reveal>
+      Eu sempre achei que parar fosse o contrário de evoluir.
+      Meu corpo discordou — e ele venceu a discussão.
+    </blockquote>
+    <cite data-reveal>Yuri Mignacca</cite>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SEÇÃO 4: ATO I — O LIMITE
+     ═══════════════════════════════════════════════════════ -->
+<section class="section ato1" id="historia">
+  <div class="container split split--75">
+    <div class="split__text">
+      <p class="eyebrow" data-reveal>A História</p>
+      <p class="ato-tag" data-reveal>Ato I — O Limite</p>
+      <h2 data-reveal>O dia em que achou que estava infartando.</h2>
+
+      <div data-reveal>
+        <p>
+          A conta chegou de uma vez. Treino de alta performance de manhã, cozinha
+          profissional à tarde, vida social à noite — e nenhum espaço em branco no meio.
+          Yuri Mignacca vinha empilhando três rotinas de tempo integral sobre um corpo só,
+          convencido de que <strong>descanso era tempo perdido</strong>.
+        </p>
+        <p>
+          Até o dia em que o peito apertou de um jeito que não parecia treino. Ele publicou
+          o relato com o título que qualquer atleta reconhece e ninguém quer dizer em voz alta:
+          <strong>"achei que tava infartando"</strong>. Não era o coração falhando. Era o corpo
+          cobrando a conta de meses sem pausa — exaustão física acumulada, do tipo que não se
+          resolve com um dia de folga.
+        </p>
+        <p>
+          O que aconteceu depois disse mais sobre ele do que qualquer resultado de prova.
+          Em vez de sumir e voltar com uma foto de pódio, ele abriu o processo inteiro em
+          público — o susto, o diagnóstico, a frustração de parar no meio de uma temporada.
+        </p>
+      </div>
+
+      <p class="nota-dado" data-reveal>
+        Esse foi o post de <strong>maior engajamento da história do perfil</strong>:
+        12–13%, cerca do dobro da média dele. A audiência de 5.204 seguidores não
+        respondeu ao atleta performando — respondeu ao atleta sendo honesto.
+      </p>
+    </div>
+
+    <div class="split__media" data-reveal>
+      <div class="ph ph--retrato ph--light">
+        <!-- SUBSTITUIR: retrato introspectivo em preto e branco — 900x1100px.
+             alt sugerido: "Retrato em preto e branco de Yuri Mignacca, olhar baixo, expressão serena" -->
+        <span class="ph__label">Retrato P&amp;B — 900×1100</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SEÇÃO 5: ATO II — A PAUSA
+     ═══════════════════════════════════════════════════════ -->
+<section class="section ato2">
+  <div class="container">
+    <p class="eyebrow" data-reveal>Ato II — A Pausa</p>
+    <h2 data-reveal>Parar foi a parte difícil. Continuar parado, mais ainda.</h2>
+
+    <div class="pausa-grid">
+      <article class="pausa-card" data-reveal>
+        <h3><span class="num">+45</span>dias longe do esporte</h3>
+        <p>
+          Sem prova, sem treino forte, sem cronômetro. O tempo mais longo fora
+          da competição desde que passou a levar o esporte a sério.
+        </p>
+      </article>
+      <article class="pausa-card" data-reveal>
+        <h3>Atualmente parado, mas sempre em movimento</h3>
+        <p>
+          Caminhadas leves no lugar dos intervalados. A regra virou não zerar
+          o dia — mesmo que o dia coubesse num passo lento.
+        </p>
+      </article>
+      <article class="pausa-card" data-reveal>
+        <h3>Para não pirar</h3>
+        <p>
+          A cozinha, os jantares e a câmera assumiram o espaço que a prova
+          deixou vago. A pausa do atleta virou temporada dos outros dois ofícios.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SEÇÃO 6: ATO III — A VOLTA
+     ═══════════════════════════════════════════════════════ -->
+<section class="ato3">
+  <div class="container ato3__inner">
+    <svg class="heart heart--divisor heart--light" aria-hidden="true" focusable="false"><use href="#heart"/></svg>
+    <p>Voltando de leve. Mas voltando.</p>
+    <svg class="heart heart--divisor heart--light" aria-hidden="true" focusable="false"><use href="#heart"/></svg>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SEÇÃO 7: ATLETA
+     ═══════════════════════════════════════════════════════ -->
+<section class="section atleta" id="atleta">
+  <div class="container">
+    <div class="atleta__head">
+      <p class="eyebrow" data-reveal>Atleta</p>
+      <h2 data-reveal>Montanha, cascalho e dois dias seguidos de prova.</h2>
+      <p data-reveal>
+        MTB, trail running e cross duathlon. A especialidade é justamente o que
+        cansa duas vezes: correr subindo e pedalar no mesmo fim de semana.
+      </p>
+    </div>
+
+    <div class="acao-grid">
+      <div class="ph ph--acao-a ph--dark" data-reveal>
+        <!-- SUBSTITUIR: MTB em descida — 1000x700px.
+             alt sugerido: "Yuri Mignacca descendo trilha técnica de mountain bike" -->
+        <span class="ph__label">MTB em descida — 1000×700</span>
+      </div>
+      <div class="ph ph--acao-b ph--dark" data-reveal>
+        <!-- SUBSTITUIR: corrida em trilha — 1000x700px.
+             alt sugerido: "Yuri Mignacca correndo em trilha de montanha, subida de cascalho" -->
+        <span class="ph__label">Corrida em trilha — 1000×700</span>
+      </div>
+    </div>
+
+    <ul class="marcos">
+      <li class="marco" data-reveal>
+        <p class="marco__eyebrow">World Trail Races · Nova Lima — MG</p>
+        <div>
+          <h3 class="marco__feito">2º Categoria no Trail</h3>
+          <p class="marco__ctx">Trail short com muita subida e cascalho, no quintal de casa.</p>
+        </div>
+      </li>
+      <li class="marco" data-reveal>
+        <p class="marco__eyebrow">Cross Duathlon</p>
+        <div>
+          <h3 class="marco__feito">2º Lugar no Duatlo</h3>
+          <p class="marco__ctx">Corrida e MTB no mesmo dia, sem intervalo para negociar.</p>
+        </div>
+      </li>
+      <li class="marco" data-reveal>
+        <p class="marco__eyebrow">Segundo dia de prova</p>
+        <div>
+          <h3 class="marco__feito">48K de MTB de Montanha</h3>
+          <p class="marco__ctx">A etapa que decidiu a somatória — depois de já ter corrido no dia anterior.</p>
+        </div>
+      </li>
+      <li class="marco" data-reveal>
+        <p class="marco__eyebrow">Somatória dos dois dias</p>
+        <div>
+          <h3 class="marco__feito">4º Geral</h3>
+          <p class="marco__ctx">Resultado que mede o que ele faz de melhor: sustentar performance no acúmulo.</p>
+        </div>
+      </li>
+      <li class="marco" data-reveal>
+        <p class="marco__eyebrow">Nutrição e performance</p>
+        <div>
+          <h3 class="marco__feito">Alquimia da Saúde</h3>
+          <p class="marco__ctx">Patrocinador oficial — parceria ativa, citada em cada resultado.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SEÇÃO 8: COZINHA
+     ═══════════════════════════════════════════════════════ -->
+<section class="section cozinha" id="cozinha">
+  <div class="container split split--57">
+    <div class="split__media cozinha__media" data-reveal>
+      <div class="ph ph--cozinha-a ph--dark">
+        <!-- SUBSTITUIR: ele de avental em cozinha profissional — 800x1000px.
+             alt sugerido: "Yuri Mignacca de avental finalizando um prato em cozinha profissional" -->
+        <span class="ph__label">Cozinha profissional — 800×1000</span>
+      </div>
+      <div class="ph ph--cozinha-b ph--dark">
+        <!-- SUBSTITUIR: prato finalizado, close editorial — 800x600px.
+             alt sugerido: "Prato autoral finalizado, close em luz natural" -->
+        <span class="ph__label">Prato finalizado — 800×600</span>
+      </div>
+    </div>
+
+    <div class="split__text">
+      <p class="eyebrow" data-reveal>Cozinha</p>
+      <h2 data-reveal>Depois do treino, o fogão.</h2>
+      <div data-reveal>
+        <p>
+          Cozinheiro de ofício, não de hobby. A mesma disciplina que organiza um bloco
+          de treino organiza uma <strong>praça de cozinha profissional</strong> — e sobra
+          para os jantares autorais que ele monta e documenta, prato a prato.
+        </p>
+        <p>
+          É o lado do trabalho que conversa direto com performance: no perfil, "Alquimia"
+          e "Jantares" são highlights vizinhos porque, na prática, tratam do mesmo assunto.
+          Combustível — só que com capricho.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SEÇÃO 9: MODELO
+     ═══════════════════════════════════════════════════════ -->
+<section class="section modelo" id="modelo">
+  <div class="container split split--75">
+    <div class="split__text">
+      <p class="eyebrow eyebrow--dark" data-reveal>Modelo</p>
+      <h2 data-reveal>A imagem também conta a história.</h2>
+      <div data-reveal>
+        <p>
+          Trabalha como modelo em campanhas de vestuário técnico — e a mais recente é o
+          editorial <strong>APEX#2, com a Nomad Sports</strong>. Não é um portfólio à parte:
+          é o mesmo corpo que treina, o mesmo rosto que apareceu cansado nos posts da pausa,
+          fotografado por quem precisa que a roupa pareça real em quem realmente usa.
+        </p>
+      </div>
+    </div>
+
+    <div class="split__media" data-reveal>
+      <div class="ph ph--modelo ph--dark">
+        <!-- SUBSTITUIR: still editorial da parceria Nomad Sports — 800x1000px.
+             alt sugerido: "Yuri Mignacca em still do editorial APEX#2 para a Nomad Sports" -->
+        <span class="ph__label">Editorial APEX#2 — 800×1000</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SEÇÃO 9B: GALERIA — vida fora de prova
+     ═══════════════════════════════════════════════════════ -->
+<section class="galeria">
+  <div class="container">
+    <p class="eyebrow eyebrow--dark" data-reveal>Fora de prova</p>
+    <div class="galeria__grid">
+      <!-- SUBSTITUIR (6 imagens do arquivo pessoal, formato retrato/quadrado):
+           1) caminhada leve durante a pausa — 800x1200px
+           2) mesa de jantar autoral montada — 900x900px
+           3) bastidor de treino / bike na oficina — 900x1200px
+           4) largada de prova, multidão — 900x1200px
+           5) paisagem de trilha ao amanhecer — 800x1200px
+           6) momento com amigos ou família — 900x900px -->
+      <div class="ph ph--g1 ph--dark" data-reveal><span class="ph__label">01 — caminhada</span></div>
+      <div class="ph ph--g2 ph--dark" data-reveal><span class="ph__label">02 — jantar</span></div>
+      <div class="ph ph--g3 ph--dark" data-reveal><span class="ph__label">03 — bastidor</span></div>
+      <div class="ph ph--g4 ph--dark" data-reveal><span class="ph__label">04 — largada</span></div>
+      <div class="ph ph--g5 ph--dark" data-reveal><span class="ph__label">05 — trilha</span></div>
+      <div class="ph ph--g6 ph--dark" data-reveal><span class="ph__label">06 — gente</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     SEÇÃO 10: PARCERIAS + CONTATO
+     ═══════════════════════════════════════════════════════ -->
+<section class="section parcerias" id="contato">
+  <div class="container">
+    <p class="eyebrow" data-reveal>Parcerias</p>
+    <p class="parcerias__intro" data-reveal>
+      Estas são as marcas que acompanham essa história de perto:
+    </p>
+
+    <div class="logos">
+      <div class="logo-slot" data-reveal>
+        <!-- SUBSTITUIR: logo Alquimia da Saúde em versão monocromática (SVG ou PNG transparente) — altura 48px -->
+        <span class="logo-slot__mark">Alquimia<br>da Saúde</span>
+      </div>
+      <div class="logo-slot" data-reveal>
+        <!-- SUBSTITUIR: logo Nomad Sports em versão monocromática (SVG ou PNG transparente) — altura 48px -->
+        <span class="logo-slot__mark">Nomad<br>Sports</span>
+      </div>
+      <div class="logo-slot logo-slot--vago" data-reveal>
+        <span>sua marca aqui</span>
+      </div>
+      <div class="logo-slot logo-slot--vago" data-reveal>
+        <span>sua marca aqui</span>
+      </div>
+    </div>
+
+    <div class="contato">
+      <div data-reveal>
+        <h2>Vamos construir junto?</h2>
+      </div>
+      <div data-reveal>
+        <p>
+          Aberto a conversas com marcas de nutrição, performance, bike, vestuário técnico
+          e alimentação. O que está em jogo aqui não é alcance bruto — é uma audiência que
+          responde ao processo, não só ao resultado.
+        </p>
+        <div class="contato__actions">
+          <!-- SUBSTITUIR: trocar href por mailto:EMAIL_REAL ou https://wa.me/55DDDNUMERO -->
+          <a class="btn btn--primary" href="#contato">Falar com o Yuri</a>
+          <a class="btn btn--ghost-dark" href="https://instagram.com/yurimignacca_" target="_blank" rel="noopener">
+            Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══════════════════════════════════════════════════════
+     SEÇÃO 11: FOOTER
+     ═══════════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <p class="footer__brand">
+      <svg class="heart heart--footer" aria-hidden="true" focusable="false"><use href="#heart"/></svg>
+      Yuri Mignacca
+    </p>
+    <ul class="footer__links">
+      <li><a href="https://instagram.com/yurimignacca_" target="_blank" rel="noopener" aria-label="Instagram de Yuri Mignacca (abre em nova aba)">Instagram</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <p class="footer__note">
+      <svg class="heart heart--footer heart--light" aria-hidden="true" focusable="false"><use href="#heart"/></svg>
+      Feito durante a pausa.
+    </p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+  /* ═══ NAV: estado ao rolar ═══ */
+  var nav = document.getElementById("nav");
+  var ticking = false;
+  function onScroll(){
+    if(ticking) return;
+    ticking = true;
+    requestAnimationFrame(function(){
+      nav.classList.toggle("scrolled", window.scrollY > 40);
+      parallax();
+      ticking = false;
+    });
+  }
+  window.addEventListener("scroll", onScroll, {passive:true});
+
+  /* ═══ HERO: parallax leve (desktop, sem reduced-motion) ═══ */
+  var heroMedia = document.getElementById("heroMedia");
+  function parallax(){
+    if(!heroMedia || reduce.matches || window.innerWidth < 900) return;
+    var y = window.scrollY;
+    if(y > window.innerHeight) return;
+    var shift = Math.min(y * 0.14, window.innerHeight * 0.06);
+    heroMedia.style.transform = "translate3d(0," + (-shift) + "px,0)";
+  }
+  onScroll();
+
+  /* ═══ DRAWER mobile ═══ */
+  var toggle = document.getElementById("navToggle");
+  var drawer = document.getElementById("drawer");
+  var scrim  = document.getElementById("scrim");
+
+  function setDrawer(open){
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.setAttribute("aria-label", open ? "Fechar menu de navegação" : "Abrir menu de navegação");
+    drawer.classList.toggle("open", open);
+    scrim.classList.toggle("open", open);
+    if(open){ scrim.hidden = false; drawer.removeAttribute("inert"); }
+    else { drawer.setAttribute("inert",""); setTimeout(function(){ if(!drawer.classList.contains("open")) scrim.hidden = true; }, 400); }
+    document.body.style.overflow = open ? "hidden" : "";
+    if(open){ var f = drawer.querySelector("a"); if(f) f.focus(); }
+  }
+  toggle.addEventListener("click", function(){
+    setDrawer(toggle.getAttribute("aria-expanded") !== "true");
+  });
+  scrim.addEventListener("click", function(){ setDrawer(false); toggle.focus(); });
+  drawer.addEventListener("click", function(e){ if(e.target.tagName === "A") setDrawer(false); });
+  document.addEventListener("keydown", function(e){
+    if(e.key === "Escape" && drawer.classList.contains("open")){ setDrawer(false); toggle.focus(); }
+  });
+  window.addEventListener("resize", function(){
+    if(window.innerWidth > 768 && drawer.classList.contains("open")) setDrawer(false);
+  });
+
+  /* ═══ SCROLL REVEAL com stagger de 80ms entre irmãos ═══ */
+  var items = Array.prototype.slice.call(document.querySelectorAll("[data-reveal]"));
+  var seen = new Map();
+  items.forEach(function(el){
+    var p = el.parentElement;
+    var i = seen.get(p) || 0;
+    seen.set(p, i + 1);
+    if(i > 0 && !reduce.matches) el.style.setProperty("--reveal-delay", (i * 80) + "ms");
+  });
+
+  if(!("IntersectionObserver" in window)){
+    items.forEach(function(el){ el.classList.add("is-visible"); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(!entry.isIntersecting) return;
+      entry.target.classList.add("is-visible");
+      io.unobserve(entry.target);
+    });
+  }, {rootMargin:"0px 0px -12% 0px", threshold:0.12});
+  items.forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>
