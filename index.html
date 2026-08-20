@@ -246,9 +246,15 @@ h2{font-size:var(--h-sec)}
 }
 .hero__media{position:absolute;inset:-8% 0 -8% 0;will-change:transform}
 .hero__media::before{
-  content:"";position:absolute;inset:0;z-index:2;
-  background:linear-gradient(to top,rgba(28,27,24,.92) 0%,rgba(28,27,24,.55) 34%,rgba(28,27,24,.12) 62%,rgba(28,27,24,.45) 100%);
+  content:"";position:absolute;inset:0;z-index:3;
+  background:
+    linear-gradient(to top,rgba(18,22,15,.95) 0%,rgba(18,22,15,.86) 26%,rgba(18,22,15,.62) 52%,rgba(18,22,15,.34) 74%,rgba(18,22,15,.62) 100%),
+    linear-gradient(to right,rgba(18,22,15,.55) 0%,rgba(18,22,15,.18) 55%,rgba(18,22,15,.05) 100%);
 }
+/* a foto real é clara e saturada: object-position mantém o ciclista no corte
+   vertical do mobile, e o filtro baixa o verde pra o texto respirar */
+.hero__media img{object-position:26% 42%;filter:saturate(.82) brightness(.86) contrast(1.04)}
+@media (min-width:900px){ .hero__media img{object-position:center 42%} }
 .hero__inner{
   position:relative;z-index:3;
   width:var(--container);margin-inline:auto;
