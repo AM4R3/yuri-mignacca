@@ -124,19 +124,6 @@ h2{font-size:var(--h-sec)}
 .ph--g6{background-image:linear-gradient(190deg,#c9bda6,#26301F)}
 
 /* ═══════════════════════════════════════════════════════════
-   CORAÇÃO ANATÔMICO (elemento de assinatura)
-   ═══════════════════════════════════════════════════════════ */
-.heart{display:block;color:var(--vermelho);flex:none;stroke-width:1.5}
-.heart--nav{width:20px;height:auto;stroke-width:3}
-.heart--hero{width:48px;height:auto}
-.heart--divisor{width:34px;height:auto;stroke-width:2}
-.heart--footer{width:20px;height:auto;stroke-width:3}
-.heart--light{color:#E8A7A7}
-
-@keyframes pulso{0%,100%{transform:scale(1)}42%{transform:scale(1.04)}58%{transform:scale(1.005)}}
-.heart--pulse{animation:pulso 2.8s ease-in-out infinite;transform-origin:center}
-
-/* ═══════════════════════════════════════════════════════════
    BOTÕES
    ═══════════════════════════════════════════════════════════ */
 .btn{
@@ -275,10 +262,6 @@ h2{font-size:var(--h-sec)}
   font-size:clamp(1.05rem,1.5vw,1.28rem);line-height:1.7;margin-bottom:2.4rem;
 }
 .hero__ctas{display:flex;flex-wrap:wrap;gap:.9rem}
-.hero__heart{
-  position:absolute;z-index:4;right:max(4vw,1.5rem);
-  bottom:clamp(3rem,9vh,6rem);
-}
 .hero__scroll{
   position:absolute;z-index:4;left:max(4vw,1.5rem);top:calc(100svh - 3.2rem);
   font-family:"Oswald",sans-serif;font-size:.62rem;letter-spacing:.28em;
@@ -516,7 +499,6 @@ h2{font-size:var(--h-sec)}
   .marco{gap:.7rem}
   .marco__eyebrow{margin-bottom:.3rem}
   .hero h1{max-width:none;font-size:clamp(2.6rem,12vw,4rem)}
-  .hero__heart{right:1.5rem;bottom:auto;top:calc(100svh - 12rem)}
   .hero__scroll{display:none}
   .footer__inner{flex-direction:column;align-items:flex-start;gap:1.6rem}
 }
@@ -534,7 +516,6 @@ h2{font-size:var(--h-sec)}
   }
   [data-reveal]{transform:none;transition:opacity .2s linear;transition-delay:0ms !important}
   .marco__feito{clip-path:none;transition:none}
-  .heart--pulse{animation:none}
   .hero__media{transform:none !important;inset:0}
   .btn{transition:background-color .2s linear,color .2s linear}
   .btn:active{transform:none}
@@ -560,35 +541,12 @@ h2{font-size:var(--h-sec)}
 <body>
 
 <!-- ═══════════════════════════════════════════════════════
-     CORAÇÃO ANATÔMICO — line art, definido uma vez
-     ═══════════════════════════════════════════════════════ -->
-<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
-  <symbol id="heart" viewBox="0 0 64 72">
-    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-      <!-- massa ventricular -->
-      <path d="M17 31c-7.5 5.5-10 17.5-5.5 27.5 3.6 8 11.5 13.5 18.5 11.6 9.5-2.6 17-12.5 19.5-25 1.4-7 .6-12.6-3-15.6"/>
-      <!-- sulco atrial -->
-      <path d="M17 31c4-4 10.5-3 15 .5 4-3.6 10.5-4.4 14.5-2"/>
-      <!-- arco aórtico -->
-      <path d="M32 31.5c-.5-10.5 1.5-19 8-21.5 6-2.3 10.2 2.4 9.4 8.8-.6 4.8-1.8 8.4-2.2 12.7"/>
-      <!-- tronco pulmonar -->
-      <path d="M27 29.5c-2-8-6-13.5-11.2-13.5-5 0-7.3 4.8-5.4 9.2"/>
-      <!-- artéria coronária -->
-      <path d="M18.5 36c5.5 3.6 14 4.4 22 1.6"/>
-      <!-- septo -->
-      <path d="M29.5 34.5c2.2 11 2 22.8-2.6 33"/>
-    </g>
-  </symbol>
-</svg>
-
-<!-- ═══════════════════════════════════════════════════════
      SEÇÃO 1: NAV
      ═══════════════════════════════════════════════════════ -->
 <header>
   <nav class="nav" id="nav" aria-label="Navegação principal">
     <div class="nav__inner">
       <a class="nav__brand" href="#topo">
-        <svg class="heart heart--nav" aria-hidden="true" focusable="false"><use href="#heart"/></svg>
         Yuri Mignacca
       </a>
       <ul class="nav__links">
@@ -642,8 +600,6 @@ h2{font-size:var(--h-sec)}
       <a class="btn btn--ghost" href="#contato">Parcerias</a>
     </div>
   </div>
-
-  <svg class="heart heart--hero heart--pulse hero__heart" aria-hidden="true" focusable="false"><use href="#heart"/></svg>
   <p class="hero__scroll">Role</p>
 </section>
 
@@ -749,9 +705,7 @@ h2{font-size:var(--h-sec)}
      ═══════════════════════════════════════════════════════ -->
 <section class="ato3">
   <div class="container ato3__inner">
-    <svg class="heart heart--divisor heart--light" aria-hidden="true" focusable="false"><use href="#heart"/></svg>
     <p>Voltando de leve. Mas voltando.</p>
-    <svg class="heart heart--divisor heart--light" aria-hidden="true" focusable="false"><use href="#heart"/></svg>
   </div>
   <p class="ato3__next">
     <!-- ATUALIZAR depois da prova: trocar por resultado, ou remover a faixa -->
@@ -980,7 +934,6 @@ h2{font-size:var(--h-sec)}
 <footer class="footer">
   <div class="container footer__inner">
     <p class="footer__brand">
-      <svg class="heart heart--footer" aria-hidden="true" focusable="false"><use href="#heart"/></svg>
       Yuri Mignacca
     </p>
     <ul class="footer__links">
@@ -988,7 +941,6 @@ h2{font-size:var(--h-sec)}
       <li><a href="#contato">Contato</a></li>
     </ul>
     <p class="footer__note">
-      <svg class="heart heart--footer heart--light" aria-hidden="true" focusable="false"><use href="#heart"/></svg>
       Feito durante a pausa.
     </p>
   </div>
