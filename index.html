@@ -15,8 +15,8 @@
 <meta property="og:title" content="Yuri Mignacca — Atleta de Endurance | MTB, Trail e Duathlon">
 <meta property="og:description" content="Transformando uma pausa forçada em evolução. Atleta de endurance, cozinheiro e modelo — a história completa em um só lugar.">
 <meta property="og:url" content="https://yurimignacca.com/">
-<!-- SUBSTITUIR: og:image — foto de ação horizontal com o rosto visível, 1200x630px -->
-<meta property="og:image" content="/og-yuri-mignacca.jpg">
+<meta property="og:image" content="/img/og.jpg">
+<meta property="og:image:alt" content="Yuri Mignacca pedalando em trilha de montanha durante prova de MTB">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -356,6 +356,14 @@ h2{font-size:var(--h-sec)}
   margin:0;font-family:"Oswald",sans-serif;font-weight:600;
   font-size:clamp(1.25rem,3vw,2rem);letter-spacing:.06em;text-transform:uppercase;
 }
+.ato3__next{
+  width:var(--container);margin:1.6rem auto 0;text-align:center;
+  font-family:"Lora",serif !important;font-style:italic;font-weight:400 !important;
+  font-size:clamp(.92rem,1.4vw,1.05rem) !important;letter-spacing:0 !important;
+  text-transform:none !important;color:rgba(255,255,255,.86);
+  padding-top:1.4rem;border-top:1px solid rgba(255,255,255,.28);
+}
+.ato3__next strong{color:#fff;font-weight:500;box-shadow:none}
 
 /* ═══ SEÇÃO 7: ATLETA ═══ */
 .atleta__head{max-width:52ch;margin-bottom:clamp(2.5rem,5vw,4rem)}
@@ -607,10 +615,10 @@ h2{font-size:var(--h-sec)}
      SEÇÃO 2: HERO
      ═══════════════════════════════════════════════════════ -->
 <section class="hero">
-  <div class="hero__media ph ph--hero ph--dark" id="heroMedia" aria-hidden="true">
-    <!-- SUBSTITUIR: foto de ação em trilha/MTB, ângulo inclinado dinâmico, poeira/movimento visível — 1600x1000px.
-         alt sugerido: "Yuri Mignacca em descida de MTB numa trilha de cascalho, poeira suspensa ao fundo" -->
-    <span class="ph__label">Foto de ação — trilha / MTB</span>
+  <div class="hero__media ph ph--hero ph--dark" id="heroMedia">
+    <!-- Foto: @sertoes.bike, maio/2026 — montanhas de Nova Lima -->
+    <img src="img/hero.jpg" width="1600" height="1050" fetchpriority="high" decoding="async"
+         alt="Yuri Mignacca pedalando de mountain bike numa trilha estreita de montanha, subindo entre o capim verde">
   </div>
 
   <div class="hero__inner">
@@ -638,13 +646,12 @@ h2{font-size:var(--h-sec)}
      ═══════════════════════════════════════════════════════ -->
 <section class="declaracao">
   <div class="container">
-    <!-- VALIDAR com o Yuri: frase-síntese construída a partir do arco real dos posts.
-         Ajustar para as palavras exatas dele, se ele preferir. -->
+    <!-- Frase REAL do Yuri — post "+ de 45 dias", 02/ago/2026. Palavras dele, sem edição. -->
     <blockquote data-reveal>
-      Eu sempre achei que parar fosse o contrário de evoluir.
-      Meu corpo discordou — e ele venceu a discussão.
+      E, pela primeira vez, estou entendendo que
+      performance sem saúde não vale a pena.
     </blockquote>
-    <cite data-reveal>Yuri Mignacca</cite>
+    <cite data-reveal>Yuri Mignacca — agosto de 2026</cite>
   </div>
 </section>
 
@@ -681,16 +688,17 @@ h2{font-size:var(--h-sec)}
 
       <p class="nota-dado" data-reveal>
         Esse foi o post de <strong>maior engajamento da história do perfil</strong>:
-        12–13%, cerca do dobro da média dele. A audiência de 5.204 seguidores não
-        respondeu ao atleta performando — respondeu ao atleta sendo honesto.
+        491 curtidas e 138 comentários numa base de 5.209 seguidores — <strong>12,1%</strong>,
+        cerca do dobro da média dele. A audiência não respondeu ao atleta performando:
+        respondeu ao atleta sendo honesto.
       </p>
     </div>
 
     <div class="split__media" data-reveal>
-      <div class="ph ph--retrato ph--light">
-        <!-- SUBSTITUIR: retrato introspectivo em preto e branco — 900x1100px.
-             alt sugerido: "Retrato em preto e branco de Yuri Mignacca, olhar baixo, expressão serena" -->
-        <span class="ph__label">Retrato P&amp;B — 900×1100</span>
+      <div class="ph ph--retrato">
+        <!-- Foto: World Trail Races Nova Lima, abr/2026 — convertida em P&B -->
+        <img src="img/retrato.jpg" width="900" height="1100" loading="lazy" decoding="async"
+             alt="Retrato em preto e branco de Yuri Mignacca recebendo água na cabeça logo após a chegada, olhos fechados, exausto">
       </div>
     </div>
   </div>
@@ -706,24 +714,24 @@ h2{font-size:var(--h-sec)}
 
     <div class="pausa-grid">
       <article class="pausa-card" data-reveal>
-        <h3><span class="num">+45</span>dias longe do esporte</h3>
+        <h3><span class="num">+45</span>dias longe da rotina</h3>
         <p>
-          Sem prova, sem treino forte, sem cronômetro. O tempo mais longo fora
-          da competição desde que passou a levar o esporte a sério.
+          O tempo que ele precisou ficar fora da rotina que mais fazia sentido
+          pra ele. Sem prova, sem bloco de treino, sem cronômetro.
         </p>
       </article>
       <article class="pausa-card" data-reveal>
-        <h3>Atualmente parado, mas sempre em movimento</h3>
+        <h3>Aprender a esperar</h3>
         <p>
-          Caminhadas leves no lugar dos intervalados. A regra virou não zerar
-          o dia — mesmo que o dia coubesse num passo lento.
+          Nas palavras dele, a parte difícil não foi perder condicionamento.
+          Foi esperar exames, esperar respostas, esperar o momento certo de voltar.
         </p>
       </article>
       <article class="pausa-card" data-reveal>
         <h3>Para não pirar</h3>
         <p>
-          A cozinha, os jantares e a câmera assumiram o espaço que a prova
-          deixou vago. A pausa do atleta virou temporada dos outros dois ofícios.
+          A cozinha e a câmera assumiram o espaço que a prova deixou vago.
+          A pausa do atleta virou temporada dos outros dois ofícios.
         </p>
       </article>
     </div>
@@ -739,6 +747,10 @@ h2{font-size:var(--h-sec)}
     <p>Voltando de leve. Mas voltando.</p>
     <svg class="heart heart--divisor heart--light" aria-hidden="true" focusable="false"><use href="#heart"/></svg>
   </div>
+  <p class="ato3__next">
+    <!-- ATUALIZAR depois da prova: trocar por resultado, ou remover a faixa -->
+    Próximo capítulo: <strong>Desafio Avante Entre Serras</strong> — Acuruí, Itabirito/MG · 21 a 23 de agosto de 2026
+  </p>
 </section>
 
 <!-- ═══════════════════════════════════════════════════════
@@ -757,14 +769,14 @@ h2{font-size:var(--h-sec)}
 
     <div class="acao-grid">
       <div class="ph ph--acao-a ph--dark" data-reveal>
-        <!-- SUBSTITUIR: MTB em descida — 1000x700px.
-             alt sugerido: "Yuri Mignacca descendo trilha técnica de mountain bike" -->
-        <span class="ph__label">MTB em descida — 1000×700</span>
+        <!-- Foto: Brasil Ride Botucatu, jun/2026 -->
+        <img src="img/acao-mtb.jpg" width="1000" height="700" loading="lazy" decoding="async"
+             alt="Yuri Mignacca atravessando um trecho alagado de mountain bike, água espirrando sob a roda">
       </div>
       <div class="ph ph--acao-b ph--dark" data-reveal>
-        <!-- SUBSTITUIR: corrida em trilha — 1000x700px.
-             alt sugerido: "Yuri Mignacca correndo em trilha de montanha, subida de cascalho" -->
-        <span class="ph__label">Corrida em trilha — 1000×700</span>
+        <!-- Foto: World Trail Races Nova Lima, abr/2026 -->
+        <img src="img/acao-trail.jpg" width="1000" height="800" loading="lazy" decoding="async"
+             alt="Yuri Mignacca correndo em subida de trilha de terra vermelha com o número 1148 no peito">
       </div>
     </div>
 
@@ -798,6 +810,20 @@ h2{font-size:var(--h-sec)}
         </div>
       </li>
       <li class="marco" data-reveal>
+        <p class="marco__eyebrow">Brasil Ride · Botucatu — SP</p>
+        <div>
+          <h3 class="marco__feito">Quase 200 KM em 3 dias</h3>
+          <p class="marco__ctx">O maior festival de mountain bike do Brasil: subida, estradão, trilha e trechos técnicos, dia após dia.</p>
+        </div>
+      </li>
+      <li class="marco" data-reveal>
+        <p class="marco__eyebrow">Sertões Bike · Nova Lima — MG</p>
+        <div>
+          <h3 class="marco__feito">3 Dias Seguidos de Montanha</h3>
+          <p class="marco__ctx">Resultado entre os primeiros da categoria numa das provas mais duras do calendário.</p>
+        </div>
+      </li>
+      <li class="marco" data-reveal>
         <p class="marco__eyebrow">Nutrição e performance</p>
         <div>
           <h3 class="marco__feito">Alquimia da Saúde</h3>
@@ -815,14 +841,14 @@ h2{font-size:var(--h-sec)}
   <div class="container split split--57">
     <div class="split__media cozinha__media" data-reveal>
       <div class="ph ph--cozinha-a ph--dark">
-        <!-- SUBSTITUIR: ele de avental em cozinha profissional — 800x1000px.
-             alt sugerido: "Yuri Mignacca de avental finalizando um prato em cozinha profissional" -->
-        <span class="ph__label">Cozinha profissional — 800×1000</span>
+        <!-- Foto: @anacerqueira.styling, mar/2026 — testes da collab com a Hamburgueria 182 -->
+        <img src="img/cozinha-1.jpg" width="800" height="1000" loading="lazy" decoding="async"
+             alt="Yuri Mignacca de avental, braços cruzados, na praça de uma cozinha profissional">
       </div>
       <div class="ph ph--cozinha-b ph--dark">
-        <!-- SUBSTITUIR: prato finalizado, close editorial — 800x600px.
-             alt sugerido: "Prato autoral finalizado, close em luz natural" -->
-        <span class="ph__label">Prato finalizado — 800×600</span>
+        <!-- Foto: prato autoral — atum, cereja, romesco e azeite de coentro, jan/2026 -->
+        <img src="img/cozinha-2.jpg" width="800" height="600" loading="lazy" decoding="async"
+             alt="Prato autoral finalizado: lâminas de atum sobre creme de romesco, com azeite de coentro">
       </div>
     </div>
 
@@ -832,13 +858,14 @@ h2{font-size:var(--h-sec)}
       <div data-reveal>
         <p>
           Cozinheiro de ofício, não de hobby. A mesma disciplina que organiza um bloco
-          de treino organiza uma <strong>praça de cozinha profissional</strong> — e sobra
-          para os jantares autorais que ele monta e documenta, prato a prato.
+          de treino organiza uma <strong>praça de cozinha profissional</strong> — e virou
+          negócio: a <strong>Duppla Cozinha</strong>, assinada com sócios, é o que está
+          linkado na bio dele antes de qualquer coisa sobre esporte.
         </p>
         <p>
-          É o lado do trabalho que conversa direto com performance: no perfil, "Alquimia"
-          e "Jantares" são highlights vizinhos porque, na prática, tratam do mesmo assunto.
-          Combustível — só que com capricho.
+          De lá saem jantares autorais, criação de menu a convite de casas de Belo Horizonte
+          e collabs — a mais recente com a <strong>Hamburgueria 182 Savassi</strong>. É o lado
+          do trabalho que conversa direto com performance. Combustível, só que com capricho.
         </p>
       </div>
     </div>
@@ -865,9 +892,9 @@ h2{font-size:var(--h-sec)}
 
     <div class="split__media" data-reveal>
       <div class="ph ph--modelo ph--dark">
-        <!-- SUBSTITUIR: still editorial da parceria Nomad Sports — 800x1000px.
-             alt sugerido: "Yuri Mignacca em still do editorial APEX#2 para a Nomad Sports" -->
-        <span class="ph__label">Editorial APEX#2 — 800×1000</span>
+        <!-- Foto: editorial APEX#2 para @nomad.sports, mai/2026 -->
+        <img src="img/modelo.jpg" width="800" height="1000" loading="lazy" decoding="async"
+             alt="Yuri Mignacca em still de estúdio para o editorial APEX#2 da Nomad Sports, carregando a bike no ombro">
       </div>
     </div>
   </div>
@@ -880,19 +907,12 @@ h2{font-size:var(--h-sec)}
   <div class="container">
     <p class="eyebrow eyebrow--dark" data-reveal>Fora de prova</p>
     <div class="galeria__grid">
-      <!-- SUBSTITUIR (6 imagens do arquivo pessoal, formato retrato/quadrado):
-           1) caminhada leve durante a pausa — 800x1200px
-           2) mesa de jantar autoral montada — 900x900px
-           3) bastidor de treino / bike na oficina — 900x1200px
-           4) largada de prova, multidão — 900x1200px
-           5) paisagem de trilha ao amanhecer — 800x1200px
-           6) momento com amigos ou família — 900x900px -->
-      <div class="ph ph--g1 ph--dark" data-reveal><span class="ph__label">01 — caminhada</span></div>
-      <div class="ph ph--g2 ph--dark" data-reveal><span class="ph__label">02 — jantar</span></div>
-      <div class="ph ph--g3 ph--dark" data-reveal><span class="ph__label">03 — bastidor</span></div>
-      <div class="ph ph--g4 ph--dark" data-reveal><span class="ph__label">04 — largada</span></div>
-      <div class="ph ph--g5 ph--dark" data-reveal><span class="ph__label">05 — trilha</span></div>
-      <div class="ph ph--g6 ph--dark" data-reveal><span class="ph__label">06 — gente</span></div>
+      <div class="ph ph--g1 ph--dark" data-reveal><img src="img/g1.jpg" width="700" height="1050" loading="lazy" decoding="async" alt="Yuri Mignacca no pódio do World Trail Races em Nova Lima, mostrando a medalha de finisher"></div>
+      <div class="ph ph--g2 ph--dark" data-reveal><img src="img/g2.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Yuri Mignacca de avental apresentando um prato autoral finalizado"></div>
+      <div class="ph ph--g3 ph--dark" data-reveal><img src="img/g3.jpg" width="750" height="1000" loading="lazy" decoding="async" alt="Yuri Mignacca em selfie numa trilha de terra com um grupo de amigos ao fundo"></div>
+      <div class="ph ph--g4 ph--dark" data-reveal><img src="img/g4.jpg" width="750" height="1000" loading="lazy" decoding="async" alt="Yuri Mignacca tocando o sino de finisher sob o pórtico do World Trail Races"></div>
+      <div class="ph ph--g5 ph--dark" data-reveal><img src="img/g5.jpg" width="700" height="1050" loading="lazy" decoding="async" alt="Yuri Mignacca com amigos na arena da prova ao anoitecer, fogueira acesa ao fundo"></div>
+      <div class="ph ph--g6 ph--dark" data-reveal><img src="img/g6.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Yuri Mignacca com a equipe de cozinha depois de um serviço"></div>
     </div>
   </div>
 </section>
